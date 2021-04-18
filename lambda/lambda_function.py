@@ -27,7 +27,7 @@ def launchRequest(handler_input):
     )
 
 @sb.request_handler(can_handle_func=is_intent_name("FirstIntent"))
-def howdyIntent(handler_input): 
+def firstIntent(handler_input): 
     speechOutput = "This is my first intent"
     
     return(
