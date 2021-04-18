@@ -72,7 +72,7 @@ def fallbackIntent(handler_input):
 @sb.request_handler(can_handle_func=is_request_type("SessionEndedRequest"))
 def sessionEndedRequest(handler_input): 
     logger.info("Session ended with reason: {}".format(
-        handler_input.request_envelop.request.reason))
+        handler_input.request_envelope.request.reason))
     return handler_input.response_builder.response
 
 @sb.request_handler(can_handle_func=is_request_type("IntentRequest"))
