@@ -18,7 +18,7 @@ sb = SkillBuilder()
 
 @sb.request_handler(can_handle_func=is_request_type("LaunchRequest"))
 def launchRequest(handler_input): 
-    speechOutput = "Welcome, you can say Hello or Help. Which would you like to try?"
+    speechOutput = "Hello! Welcome to my skill!" 
     
     return(
         handler_input.response_builder.speak(speechOutput)
@@ -26,9 +26,9 @@ def launchRequest(handler_input):
         .response
     )
 
-@sb.request_handler(can_handle_func=is_intent_name("howdy"))
+@sb.request_handler(can_handle_func=is_intent_name("FirstIntent"))
 def howdyIntent(handler_input): 
-    speechOutput = "Howdy there!"
+    speechOutput = "This is my first intent"
     
     return(
         handler_input.response_builder.speak(speechOutput)
@@ -36,16 +36,6 @@ def howdyIntent(handler_input):
         .response
     )
 
-
-@sb.request_handler(can_handle_func=is_intent_name("HelloWorldIntent"))
-def helloWorldIntent(handler_input): 
-    speechOutput = "hello there!"
-    
-    return(
-        handler_input.response_builder.speak(speechOutput)
-        .set_should_end_session(False)
-        .response
-    )
 
 @sb.request_handler(can_handle_func=is_intent_name("AMAZON.HelpIntent"))
 def helpIntent(handler_input): 
@@ -61,7 +51,7 @@ def helpIntent(handler_input):
     is_intent_name("AMAZON.CancelIntent")(input) or 
     is_intent_name("AMAZON.StopIntent")(input))
 def cancelOrStopIntent(handler_input): 
-    speechOutput = "Alrighties! Buh bye!"
+    speechOutput = "Okay, see you later"
     
     return(
         handler_input.response_builder.speak(speechOutput)
