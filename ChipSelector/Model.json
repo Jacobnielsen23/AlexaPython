@@ -1,0 +1,131 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "chips selector",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "SpicyIntent",
+                    "slots": [],
+                    "samples": [
+                        "spicy",
+                        "I say spicy",
+                        "I would like spicy",
+                        "I'm feeling spicy",
+                        "I want spicy chips"
+                    ]
+                },
+                {
+                    "name": "SaltyIntent",
+                    "slots": [],
+                    "samples": [
+                        "salty",
+                        "I say salty",
+                        "I would like salty",
+                        "I'm feeling salty",
+                        "I want salty chips"
+                    ]
+                },
+                {
+                    "name": "SweetIntent",
+                    "slots": [],
+                    "samples": [
+                        "sweet",
+                        "I say sweet",
+                        "I would like sweet",
+                        "I'm feeling sweet",
+                        "I want sweet chips"
+                    ]
+                },
+                {
+                    "name": "CheesyIntent",
+                    "slots": [],
+                    "samples": [
+                        "I want cheesy",
+                        "I'm feeling cheesy",
+                        "I would like cheesy",
+                        "I say cheesy",
+                        "cheesy"
+                    ]
+                },
+                {
+                    "name": "SweetandSourIntent",
+                    "slots": [],
+                    "samples": [
+                        "I want sweet and sour chips",
+                        "I'm feeling sweet and sour",
+                        "I would like sweet and sour",
+                        "I say sweet and sour",
+                        "sweet and sour"
+                    ]
+                },
+                {
+                    "name": "SourIntent",
+                    "slots": [],
+                    "samples": [
+                        "I want sour ",
+                        "I would like sour",
+                        "I'm feeling sour",
+                        "sour"
+                    ]
+                },
+                {
+                    "name": "ClassicIntent",
+                    "slots": [],
+                    "samples": [
+                        "I'm feeling classic",
+                        "I would like classic ",
+                        "I want classic ",
+                        "classic"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Spicy",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Spicy Ruffles"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jalapeño Lays"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Flamin' Hot Cheetos"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Original Takis"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
